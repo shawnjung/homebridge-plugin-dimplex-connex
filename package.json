@@ -1,5 +1,4 @@
 {
-  "private": true,
   "displayName": "Homebridge Plugin Dimplex Connex",
   "name": "homebridge-plugin-dimplex-connex",
   "version": "1.0.0",
