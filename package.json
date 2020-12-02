@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "displayName": "Homebridge Plugin Dimplex Connex",
+  "name": "homebridge-plugin-dimplex-connex",
+  "version": "1.0.0",
+  "description": "A short description about what your plugin does.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shawnjung/homebridge-plugin-dimplex-connex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shawnjung/homebridge-plugin-dimplex-connex/issues"
+  },
+  "engines": {
+    "node": ">=10.17.0",
+    "homebridge": ">=1.0.0"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src/**.ts --max-warnings=0",
+    "watch": "npm run build && npm link && nodemon",
+    "build": "rimraf ./dist && tsc",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "dependencies": {
+    "axios": "^0.19.0",
+    "global": "^4.4.0",
+    "lodash": "^4.17.20",
+    "luxon": "^1.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.8",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
+    "eslint": "^7.11.0",
+    "homebridge": "^1.1.6",
+    "nodemon": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}

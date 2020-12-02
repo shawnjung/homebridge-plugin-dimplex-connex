@@ -1,0 +1,28 @@
+{
+  "pluginAlias": "DimplexConnexHomebridgePlugin",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "dimplexEmail": {
+        "title": "Dimplex Email",
+        "type": "string",
+        "required": true,
+        "default": ""
+      },
+      "dimplexPassword": {
+        "title": "Dimplex Password",
+        "type": "string",
+        "required": true,
+        "default": ""
+      },
+      "syncInterval": {
+        "title": "Sync Interval Minutes",
+        "type": "number",
+        "required": true,
+        "default": 5
+      }
+    }
+  }
+}
